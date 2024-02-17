@@ -53,35 +53,3 @@ def fetch_coms_win():
         if i == "COM1":
             com_lst.remove(i)
     return com_lst
-
-
-def find_top(lst):
-    top = 0
-    index_var = []
-    for i in lst:
-        if int(i[2]) > int(top):
-            top = i[2]
-            index_var = i
-    return index_var
-
-
-
-x = "Orleans wine 697\nGiessen wine 714\nAmsterdam wine 718\n*Groningen wine 928" \
-    "\n*Warszawa wine 1024\nTorun Wine 846\nGrodno Wine 836\nMinsk wine 756\nOstrog wine 892" \
-    "\nKherson wine 878\nKiev wine 756\n*Pskov wine 968\nMinsk wine 812\nLublin wine 756" \
-    "\nGiessen wine 760\nMilano wine 736\nNapoli wine 760\nMestre wine 912"
-x_lst = x.split("\n")
-split_lst = []
-top_lst = []
-
-
-for i in x_lst:
-     split_lst.append(i.split(" "))
-
-for i in range(len(split_lst)):
-    y = find_top(split_lst)
-    top_lst.append(y)
-    split_lst.remove(y)
-
-for i in top_lst:
-    print(i)
