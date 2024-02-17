@@ -1,0 +1,5 @@
+This Python program is designed to transform SMS messages into emails and emails into SMS messages. 
+It relies heavily on multiple Python modules, most notably:
+'smtplib', 'gsmmodem', 'email.mime.text', and 'html2text'
+
+This is a thoroughly unprofessional pet project heavily afflicted with scope creep, instability, poor documentation, and amateur coding.
